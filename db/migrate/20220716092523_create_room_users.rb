@@ -6,8 +6,6 @@ class CreateRoomUsers < ActiveRecord::Migration[6.0]
       t.references :user, null: false, foreign_key: true
       t.timestamps
 
-      belongs_to :room
-      belongs_to :user
     end
   end
 end

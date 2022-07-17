@@ -8,8 +8,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
-      has_many :room_users
-      has_many :rooms,through: :room_users
 
       ## Recoverable
       t.string   :reset_password_token
